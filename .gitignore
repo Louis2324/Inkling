@@ -23,6 +23,5 @@ dist-ssr
 *.sln
 *.sw?
 
-node_modules
-dojo-blog-backend/.env
-dojo-blog-backend/node_modules
+**/*.env
+**/node_modules
