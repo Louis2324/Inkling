@@ -2,7 +2,7 @@
   "name": "inkling",
   "version": "1.0.0",
   "private": true,
-  "description": "Full-stack MERN blog project with frontend and backend separated",
+  "description": "The blog you'll fall in love with",
   "workspaces": [
     "client",
     "server"

@@ -1,14 +1,14 @@
 {
-  "name": "dojo-blog-backend",
+  "name": "inkling-backend",
   "version": "1.0.0",
-  "description": "The backend for the dojo blog",
+  "description": "The api for Inkling",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Louis2324",
   "license": "ISC",
   "type": "module",
   "dependencies": {
