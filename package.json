@@ -1,0 +1,28 @@
+{
+  "name": "inkling",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Full-stack MERN blog project with frontend and backend separated",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "start:client": "npm --prefix client run dev",
+    "start:server": "npm --prefix server start",
+    "start": "concurrently \"npm run start:server\" \"npm run start:client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Louis2324/react-blog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Louis2324/react-blog/issues"
+  },
+  "homepage": "https://github.com/Louis2324/react-blog#readme",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
