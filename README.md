@@ -40,7 +40,7 @@ Since this is a full-stack application with separate frontend and backend, each 
 
 ## 🙌 Credits
 
-* Based on [The Net Ninja's React Blog Tutorial](https://www.youtube.com/watch?v=U9T6YkEDkMo)
+* Based on [The Net Ninja's React Blog Tutorial](https://www.youtube.com/playlistlist=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d)
 * Full-stack integration by [Louis](https://github.com/Louis2324)
 
 ---
