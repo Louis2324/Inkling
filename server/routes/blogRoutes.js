@@ -43,7 +43,7 @@ router.delete(
   "/:id",
   authenticateUser,
   authorizeRoles("writer", "admin"),
-  validate(idParamSchema),
+  validate(idParamSchema , "params"),
   deleteBlog
 );
 
