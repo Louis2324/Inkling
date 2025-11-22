@@ -3,12 +3,12 @@ import { createJWT } from "../utils/jwtutil.js";
 
 export const registerUser = async (req, res, next) => {
   try {
-    const { name, password, email, role } = req.body;
+    const { name, password, email  } = req.body;
     const existingUser = await User.findOne({ email });
     if (existingUser) {
       return res.status(400).json({ message: "Email already in use" });
     }
-    const user = await User.create({ name, password, email, role });
+    const user = await User.create({ name, password, email, role : "user"});
     const token = createJWT(user);
     res.status(201).json({
       user: {
