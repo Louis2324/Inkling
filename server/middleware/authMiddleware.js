@@ -7,7 +7,7 @@ export const authenticateUser = (req, res, next) => {
 
   try {
     const token = authHeader.split(" ")[1];
-    const decoded = jwt.decode(token, process.env.JWT_SECRET);
+    const decoded = jwt.verify(token, process.env.JWT_SECRET);
     req.user = { id: decoded.userId, role: decoded.role };
     next();
   } catch (error) {
@@ -18,7 +18,7 @@ export const authenticateUser = (req, res, next) => {
 export const authorizeRoles = (...allowedRoles) => {
   return (req, res, next) => {
     if (!allowedRoles.includes(req.user.role)) {
-      return res.status(403).json({msg:"Access Denied"});
+      return res.status(403).json({ msg: "Access Denied" });
     }
     next();
   };
