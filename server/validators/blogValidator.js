@@ -1,9 +1,8 @@
 import Joi from "joi";
 
 export const BlogSchema = new Joi.object({
-    title: Joi.string().min(5).required(),
-    body: Joi.string().min(10).required(),
-    author : Joi.string().min(4).required()
+  title: Joi.string().min(5).required(),
+  body: Joi.string().min(10).required(),
 });
 
 export const updateBlogSchema = Joi.object({
