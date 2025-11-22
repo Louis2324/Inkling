@@ -21,7 +21,7 @@ app.use("/api/users", userRouter);
 app.use(notFound);
 app.use(errorHandler);
 
+await connectDB();
 app.listen(process.env.PORT, () => {
-  connectDB();
   console.log(`Server is running at http://localhost:${process.env.PORT}`);
 });
