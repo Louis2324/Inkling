@@ -1,5 +1,4 @@
 import User from "../models/User.js";
-import bcrypt from "bcrypt";
 import { createJWT } from "../utils/jwtutil.js";
 
 export const registerUser = async (req, res, next) => {
